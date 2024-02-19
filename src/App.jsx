@@ -1,6 +1,11 @@
 import Header  from './components/Header/Header'
-import Banner  from './components/Banner/Banner'
+import Footer  from './components/Footer/Footer'
+import Start  from './pages/Start/Strat'
+import CatalogPage from './pages/Catalog/Catalog'
+import TovarPage from './pages/TovarPage/TovarPage'
+import UsersPage from './pages/Users/Users'
 import './App.css'
+import {Routes, Route} from 'react-router-dom'
 
 
 function App() {
@@ -8,7 +13,13 @@ function App() {
   return (
     <>
       <Header/>
-      <Banner/>
+      <Routes>
+        <Route path="/" element = {<Start/>} />
+        <Route path="/catalog" element = {<CatalogPage/>} />
+        <Route path="/catalog/:id" element = {<TovarPage/>} />
+        <Route path="/users" element = {<UsersPage/>} />
+      </Routes>
+      <Footer/>
     </>
   )
 }

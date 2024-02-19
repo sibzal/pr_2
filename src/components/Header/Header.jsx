@@ -3,6 +3,7 @@ import Logo from '/public/Header/logo.svg'
 import SearchIcon from '/public/Header/search.svg'
 import BasketIcon from '/public/Header/basket.svg'
 import FavoriteIcon from '/public/Header/favorite.svg'
+import {Link} from 'react-router-dom'
 
 
 export default function Header(){
@@ -12,21 +13,21 @@ export default function Header(){
                 <div className="header-content">
                     <div className="header-logo-nav">
                         <div className="header__logo">
-                            <a href="" className="header__logo-link">
+                            <Link to="/" className="header__logo-link">
                                 <img src={Logo} alt="" className="logo" />
-                            </a>
+                            </Link>
                         </div>
 
                         <nav className="header__nav">
                             <ul className="header__nav-menu">
                                 <li className="header__nav-item ">
-                                    <a href="" className="header__nav-link">ГЛАВНАЯ</a>
+                                    <Link to="/" className="header__nav-link">ГЛАВНАЯ</Link>
                                 </li>
                                 <li className="header__nav-item ">
-                                    <a href="" className="header__nav-link">КАТАЛОГ</a>
+                                    <Link to="/catalog" className="header__nav-link">КАТАЛОГ</Link>
                                 </li>
                                 <li className="header__nav-item">
-                                    <a href="" className="header__nav-link">ИНФОРМАЦИЯ</a>
+                                    <Link to="/users" className="header__nav-link">ПОЛЬЗОВАТЕЛИ</Link>
                                 </li>
                             </ul>
                         </nav>
