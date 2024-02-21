@@ -29,6 +29,9 @@ export default function Header(){
                                 <li className="header__nav-item">
                                     <Link to="/users" className="header__nav-link">ПОЛЬЗОВАТЕЛИ</Link>
                                 </li>
+                                <li className="header__nav-item">
+                                    <Link to="/add" className="header__nav-link">ДОБАВИТЬ</Link>
+                                </li>
                             </ul>
                         </nav>
                     </div>

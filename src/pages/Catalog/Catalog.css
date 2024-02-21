@@ -121,3 +121,32 @@ input{
     flex-wrap: wrap;
     gap: 30px;
 }
+
+.add-content{
+    padding: 80px 15px;
+}
+.sms{
+    color: #000;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+textarea{
+    border: 2px solid #000;
+    resize: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input{
+    border-radius: 10px;
+}
+
+label{
+    color: #000;
+}

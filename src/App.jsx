@@ -6,6 +6,7 @@ import TovarPage from './pages/TovarPage/TovarPage'
 import UsersPage from './pages/Users/Users'
 import './App.css'
 import {Routes, Route} from 'react-router-dom'
+import CreatePage from './pages/CreatePage/CreatePage'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/catalog" element = {<CatalogPage/>} />
         <Route path="/catalog/:id" element = {<TovarPage/>} />
         <Route path="/users" element = {<UsersPage/>} />
+        <Route path="/add" element = {<CreatePage/>} />
       </Routes>
       <Footer/>
     </>
